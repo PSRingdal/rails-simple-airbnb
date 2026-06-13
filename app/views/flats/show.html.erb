@@ -1,0 +1,21 @@
+<nav class="nav-bar">
+  <%= link_to "Simple Airbnb", flats_path, class: "home"  %>
+  <%= link_to "Add Flat",new_flat_path, class: "btn btn-primary" %>
+</nav>
+<div class="card">
+<h1><%= @flat.name %></h1>
+<p><%= @flat.address %></p>
+</div>
+
+<div class="card">>
+  <h1>A bit more about this flat </h1>
+  <p><%= @flat.description %></p>
+</div>
+
+<div class="card">>
+  <h1>Details</h1>
+  <div class="number">
+  <p><%= @flat.number_of_guests %></p>
+  <p><%= @flat.price_per_night %></p>
+  </div>
+</div>

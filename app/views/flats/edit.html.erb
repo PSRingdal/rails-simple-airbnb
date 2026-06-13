@@ -1,0 +1,6 @@
+<nav class="nav-bar">
+  <%= link_to "Simple Airbnb", flats_path, class: "home"  %>
+  <%= link_to "Add Flat",new_flat_path, class: "btn btn-primary" %>
+</nav>
+<h1>edit</h1>
+<%= render "form", flat: @flat  %>
